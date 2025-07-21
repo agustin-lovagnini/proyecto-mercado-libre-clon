@@ -1,0 +1,35 @@
+
+
+
+
+
+/*
+.nav-header__buscador {
+    position: relative;
+    width: 300px;
+}
+
+.nav-header__buscador input[type="text"] {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /*! espacio para la lupa *//*
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nav-header__buscador .btn-lupa {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    color: #666;
+}
+
+.nav-header__buscador .btn-lupa:hover {
+    color: #007bff;
+}*/
