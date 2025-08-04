@@ -14,33 +14,38 @@
 <body>
     <header class="nav-header">
         <div class="nav-header__container">
-            <div class="nav-header__logo">
+            <!--SECCION LOGO -->
+            <div class="nav-header__logo solo-escritorio">
                 <a href="index.html">
                     <img src="multimedia/logos/logo-ml.webp" alt="Mercado Libre Argentina">
                 </a>
             </div>
-            <div class="nav-header__links">
+            <!--SECCION BUSCADOR -->
+            <div class="nav-header__links ">
                 <form class="nav-header__buscador" action="https://www.google.com/search" method="GET" target="_blank">
-                    <input type="text" name="q" placeholder="Buscar productos, marcas y más...">
-                    <button type="submit" aria-label="Buscar" class="btn-lupa">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="nav-header__buscador-input" type="text" name="q"
+                        placeholder="Buscar productos, marcas y más...">
+                    <button type="submit" aria-label="Buscar" class="nav-header__buscador-btn">
+                        <i class="nav-header__buscador-icon fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
             </div>
-            <div class="nav-header__meli+">
+            <!--SECCION MELI -->
+            <div class="nav-header__meli-plus solo-escritorio">
                 <a href="g">
                     <img src="multimedia/ilustraciones/banner-meli+-header.webp" alt="Banner Meli+ plus">
                 </a>
             </div>
-            <div>
-                <a href="https://maps.google.com.ar/maps?hl=es">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Enviar a Agustin</p>
-                    <p>Av.Cordoba 44302</p>
+            <!--SECCION UBICACION -->
+            <div class="nav-header__ubicacion">
+                <a href="https://maps.google.com.ar/maps?hl=es" class="nav-header__ubicacion-link">
+                    <i class="nav-header__ubicacion-icon fa-solid fa-location-dot"></i>
+                    <p class="nav-header__ubicacion-text">Enviar a Agustin</p>
+                    <p class="nav-header__ubicacion-text">Av.Cordoba 44302</p>
                 </a>
             </div>
-
-            <div class="nav-header__nav-menu">
+            <!--SECCION LISTA DE OPCIONES -->
+            <div class="nav-header__nav-menu solo-escritorio">
                 <ul class="nav-header__nav-menu-list">
                     <li class="nav-header__nav-menu-item">
                         <a href="index.html">Categorias</a>
@@ -59,20 +64,104 @@
                     <li class="nav-header__nav-menu-item">
                         <a href="index.html">Supermercado</a>
                     </li>
+                    <li class="nav-header__nav-menu-item">
+                        <a href="index.html">Moda</a>
+                    </li>
+                    <li class="nav-header__nav-menu-item">
+                        <a href="index.html">Vender</a>
+                    </li>
+                    <li class="nav-header__nav-menu-item">
+                        <a href="index.html">Ayuda</a>
+                    </li>
                 </ul>
             </div>
 
-            <div class="nav-header__user-menu">
-                <nav class="nav-header__user-menu-list">
-                    <ul>
-                        <li></li>
+            <!--SECCION USUARIO -->
+            <div class="nav-header__user solo-escritorio">
+                <nav class="nav-header__user-menu">
+                    <ul class="nav-header__user-menu-list">
+
+                        <li class="nav-header__user-menu-item">
+                            <label for="toggle-menu" class="nav-header__user-menu-label">
+                                <img class="nav-header__user-img" src="multimedia/img/foto-user.webp"
+                                    alt="Foto de perfil" />
+                                <p class="nav-header__user-name">Agustin...</p>
+                            </label>
+                            <input type="checkbox" id="toggle-menu" hidden>
+
+                            <ul class="nav-header__submenu">
+                                <li class="nav-header__submenu-section">
+                                    <ul class="nav-header__submenu-list">
+                                        <li>
+                                            <a href="#" class="nav-header__submenu-link">
+                                                <img class="nav-header__user-img" src="multimedia/img/foto-user.webp"
+                                                    alt="Foto de perfil" />
+                                                <p class="nav-header__user-name">Agustin...</p>
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="nav-header__submenu-link">Compras</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Historial</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Preguntas</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Opiniones</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-header__submenu-section">
+                                    <ul class="nav-header__submenu-list">
+                                        <li><a href="#" class="nav-header__submenu-link">Créditos</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Suscripciones</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Mercado Play</a></li>
+                                        <li><a href="#" class="nav-header__submenu-link">Facturación</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-header__submenu-section">
+                                    <ul class="nav-header__submenu-list">
+                                        <li><a href="#" class="nav-header__submenu-link">Vender</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-header__submenu-section">
+                                    <ul class="nav-header__submenu-list">
+                                        <li><a href="#" class="nav-header__submenu-link">Salir</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-header__user-menu-item">Mis Compras</li>
+                        <li class="nav-header__user-menu-item">Favoritos</li>
                     </ul>
                 </nav>
 
             </div>
+            <!--SECCION NOTIFICACIONES -->
+            <div class="nav-header__notificaciones">
+                <input type="checkbox" id="toggle-notificaciones" hidden>
+
+                <label for="toggle-notificaciones" class="nav-header__notificaciones-icono">
+                    <i class="fas fa-bell"></i>
+                    <span class="nav-header__notificaciones-badge">3</span>
+                </label>
+
+                <div class="nav-header__notificaciones-panel">
+                    <p class="nav-header__notificaciones-titulo">Notificaciones</p>
+                    <ul class="nav-header__notificaciones-lista">
+                        <li class="nav-header__notificaciones-item">Nuevo mensaje</li>
+                        <li class="nav-header__notificaciones-item">Compra confirmada</li>
+                        <li class="nav-header__notificaciones-item">Tu pedido fue enviado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--SECCION CARRITO -->
+            <div class="nav-header__carrito solo-escritorio">
+                <a href="compra.html" class="nav-header__carrito-link">
+                    <i class="fas fa-shopping-cart nav-header__carrito-icono"></i>
+                    <span class="nav-header__carrito-badge">2</span> <!-- Cantidad de productos -->
+                </a>
+            </div>
         </div>
-
-
     </header>
 
     <main></main>

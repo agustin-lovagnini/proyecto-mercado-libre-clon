@@ -1,23 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*! HEADER */
+
+header {
+    background-color: #ffe600;
+    padding: 15px;
+}
+
+.solo-escritorio {
+    display: none;
+}
+
+.nav-header__container {
+    display: flex;
+}
 
 
 
+/*? SECCION NOTIFICACIONES */
+.nav-header__notificaciones {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-header__notificaciones-icono {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-header__notificaciones-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header__notificaciones-panel {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+}
+
+#toggle-notificaciones:checked+.nav-header__notificaciones-icono+.nav-header__notificaciones-panel {
+    display: block;
+}
+
+.nav-header__notificaciones-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.nav-header__notificaciones-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-header__notificaciones-item {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.nav-header__notificaciones-item:last-child {
+    border-bottom: none;
+}
 
 
-/*
+/*? SECCION BUSCADOR */
 .nav-header__buscador {
     position: relative;
     width: 300px;
 }
 
-.nav-header__buscador input[type="text"] {
+.nav-header__buscador-input {
     width: 100%;
-    padding: 8px 40px 8px 12px; /*! espacio para la lupa *//*
+    padding: 8px 40px 8px 12px; 
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.nav-header__buscador .btn-lupa {
+.nav-header__buscador-btn {
     position: absolute;
     right: 8px;
     top: 50%;
@@ -30,6 +117,121 @@
     color: #666;
 }
 
-.nav-header__buscador .btn-lupa:hover {
+.nav-header__buscador-btn:hover {
     color: #007bff;
+}
+
+.nav-header__buscador-icon {
+    pointer-events: none;
+} */
+
+
+/*? SECCION LIST USER */
+/* Ocultar el submenú por defecto */
+.nav-header__submenu {
+    display: none;
+    list-style: none;
+    padding-left: 10px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked+.nav-header__submenu {
+    display: block;
+}
+
+.nav-header__user-menu-label {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-header__user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.nav-header__user-name {
+    margin: 0;
+}
+
+.nav-header__submenu-section {
+    margin-bottom: 10px;
+}
+
+.nav-header__submenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-header__submenu-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-header__submenu-link:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+
+
+/*? SECCION CARRITO */
+/*
+.nav-header__carrito {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-header__carrito-link {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-header__carrito-icono {
+    font-size: 24px;
+}
+
+.nav-header__carrito-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }*/
+
+
+@media (min-width: 768px) {
+    /*! Estilos para tablets */
+}
+
+@media (min-width: 1024px) {
+    /*! Estilos para escritorio */
+
+
+
+}
+
+@media (min-width: 1280px) {
+    /*! Estilos para pantallas grandes */
+
+    .solo-escritorio {
+    display: flex;
+}
+}
